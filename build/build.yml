@@ -40,8 +40,8 @@ jobs:
       archiveFile: ${{ parameters.artifactFileName }} 
 
   - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifact: Template-CI-BuildResult'
+    displayName: 'Publish Artifact: ILComparer-CI-BuildResult'
     inputs:
       PathtoPublish: ${{ parameters.artifactFileName }} 
       artifactType: container
-      ArtifactName: 'Template-CI-BuildResult'
+      ArtifactName: 'ILComparer-CI-BuildResult'

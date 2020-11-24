@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.64
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".root", ".root", "{B3A255A0-E95E-4143-83BA-2ABA54951F9C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		directory.build.props = directory.build.props
+		ILComparer.sln.DotSettings = ILComparer.sln.DotSettings
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EE9CB063-93B0-49F8-B61C-39F841A22D5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{47C6088F-B1F4-40E7-846E-05EF34FCB6D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{E1546E7C-A3D0-448D-8B0E-613EC15E5CFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{E96D35A1-98D9-48EB-8B8F-93F99B5CBC83}"
+	ProjectSection(SolutionItems) = preProject
+		build\azure-pipelines.yml = build\azure-pipelines.yml
+		build\build.ps1 = build\build.ps1
+		build\build.yml = build\build.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ui", "Ui", "{5A8B357C-64DC-4CBB-A4F5-1C06D5637B61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILComparer.UI.App", "src\UI\ILComparer.UI.App\ILComparer.UI.App.csproj", "{08EC22C6-1465-4AE6-A90E-66665E9C279C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{D5A21F06-1EEF-4773-8FF2-A5A1DC77B861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILComparer.Logic.Dtos", "src\Logic\ILComparer.Logic.Dtos\ILComparer.Logic.Dtos.csproj", "{CD101EC8-0944-4CE0-8A56-98F73435779F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILComparer.Logic.Comparison", "src\Logic\ILComparer.Logic.Comparison\ILComparer.Logic.Comparison.csproj", "{1A2C45A9-7F3F-4896-ABFC-E5FE26097133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILComparer.Logic.Comparison.Interfaces", "src\Logic\ILComparer.Logic.Comparison.Interfaces\ILComparer.Logic.Comparison.Interfaces.csproj", "{43DEA51C-70C4-4F22-99B0-7E2F9EEA6074}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loader", "Loader", "{F23276B2-A6A4-4A97-9260-8AEC640DF0E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILComparer.Loaders.DotNetAssembly", "src\Loaders\ILComparer.Loaders.DotNetAssembly\ILComparer.Loaders.DotNetAssembly.csproj", "{AC0FC272-90BA-4171-B7E3-A02198CEDD85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08EC22C6-1465-4AE6-A90E-66665E9C279C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08EC22C6-1465-4AE6-A90E-66665E9C279C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08EC22C6-1465-4AE6-A90E-66665E9C279C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08EC22C6-1465-4AE6-A90E-66665E9C279C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD101EC8-0944-4CE0-8A56-98F73435779F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD101EC8-0944-4CE0-8A56-98F73435779F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD101EC8-0944-4CE0-8A56-98F73435779F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD101EC8-0944-4CE0-8A56-98F73435779F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A2C45A9-7F3F-4896-ABFC-E5FE26097133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2C45A9-7F3F-4896-ABFC-E5FE26097133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2C45A9-7F3F-4896-ABFC-E5FE26097133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2C45A9-7F3F-4896-ABFC-E5FE26097133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43DEA51C-70C4-4F22-99B0-7E2F9EEA6074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DEA51C-70C4-4F22-99B0-7E2F9EEA6074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DEA51C-70C4-4F22-99B0-7E2F9EEA6074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DEA51C-70C4-4F22-99B0-7E2F9EEA6074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC0FC272-90BA-4171-B7E3-A02198CEDD85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0FC272-90BA-4171-B7E3-A02198CEDD85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0FC272-90BA-4171-B7E3-A02198CEDD85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0FC272-90BA-4171-B7E3-A02198CEDD85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE9CB063-93B0-49F8-B61C-39F841A22D5D} = {B3A255A0-E95E-4143-83BA-2ABA54951F9C}
+		{47C6088F-B1F4-40E7-846E-05EF34FCB6D8} = {B3A255A0-E95E-4143-83BA-2ABA54951F9C}
+		{E1546E7C-A3D0-448D-8B0E-613EC15E5CFB} = {B3A255A0-E95E-4143-83BA-2ABA54951F9C}
+		{E96D35A1-98D9-48EB-8B8F-93F99B5CBC83} = {B3A255A0-E95E-4143-83BA-2ABA54951F9C}
+		{5A8B357C-64DC-4CBB-A4F5-1C06D5637B61} = {EE9CB063-93B0-49F8-B61C-39F841A22D5D}
+		{08EC22C6-1465-4AE6-A90E-66665E9C279C} = {5A8B357C-64DC-4CBB-A4F5-1C06D5637B61}
+		{D5A21F06-1EEF-4773-8FF2-A5A1DC77B861} = {EE9CB063-93B0-49F8-B61C-39F841A22D5D}
+		{CD101EC8-0944-4CE0-8A56-98F73435779F} = {D5A21F06-1EEF-4773-8FF2-A5A1DC77B861}
+		{1A2C45A9-7F3F-4896-ABFC-E5FE26097133} = {D5A21F06-1EEF-4773-8FF2-A5A1DC77B861}
+		{43DEA51C-70C4-4F22-99B0-7E2F9EEA6074} = {D5A21F06-1EEF-4773-8FF2-A5A1DC77B861}
+		{F23276B2-A6A4-4A97-9260-8AEC640DF0E8} = {EE9CB063-93B0-49F8-B61C-39F841A22D5D}
+		{AC0FC272-90BA-4171-B7E3-A02198CEDD85} = {F23276B2-A6A4-4A97-9260-8AEC640DF0E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64BE185C-ABBF-409F-BC59-5D22D52E4C8B}
+	EndGlobalSection
+EndGlobal
