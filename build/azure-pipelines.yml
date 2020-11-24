@@ -1,4 +1,4 @@
-name: Template.CI
+name: ILComparer.CI
 
 trigger:
 - master
@@ -11,6 +11,6 @@ jobs:
 - template: build.yml
   parameters:
     name: TemplateCI
-    artifactFileName: '$(Build.ArtifactStagingDirectory)/Template-CI.zip'
+    artifactFileName: '$(Build.ArtifactStagingDirectory)/ILComparer-CI.zip'
     pool:
       vmImage: 'Ubuntu 20.04'
